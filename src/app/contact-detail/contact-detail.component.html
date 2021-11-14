@@ -1,0 +1,28 @@
+<!-- <div *ngIf="contact">
+
+    <h2>{{contact.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{contact.id}}</div>
+    <div>
+      <label for="contact-name">Name: </label>
+      <input id="contact-name" [(ngModel)]="contact.name" placeholder="contact">
+    </div>
+  
+    
+  </div> -->
+
+  <div *ngIf="contact" class="card" style="width: 18rem;">
+
+    <div class="card-body">
+      <h5 class="card-title">{{contact.name}} details:</h5>
+      <p class="card-text">{{contact.username}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{contact.email}}</li>
+      <li class="list-group-item">{{contact.phone}}</li>
+      <li class="list-group-item">{{contact.website}}</li>
+    </ul>
+    <!-- <div class="card-body">
+      <a href="#" class="card-link">{{contact}}</a>
+      <a href="#" class="card-link">{{contact}}</a>
+    </div> -->
+  </div>

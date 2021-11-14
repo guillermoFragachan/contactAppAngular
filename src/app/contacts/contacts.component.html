@@ -1,0 +1,31 @@
+<div class="container">
+    <h2>List of contacts: (select to see details)</h2>
+
+  <div class="row">
+
+    <div class="col-6">
+      <ul class="list-group contacts">
+        <li
+          *ngFor="let contact of contacts"
+          class="list-group-item"
+          [class.selected]="contact === selectedContact"
+          (click)="onSelect(contact)"
+        >
+          <span class="badge">{{ contact.id }}</span> {{ contact.name }}
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="col-6">
+
+        <app-contact-detail [contact]="selectedContact"></app-contact-detail>
+
+
+
+    </div>
+  </div>
+</div>
+
+<!-- [contact]="selectedContact" -->
+

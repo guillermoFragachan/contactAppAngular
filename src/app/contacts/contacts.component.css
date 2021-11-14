@@ -1,0 +1,20 @@
+
+  .contacts li:hover {
+    color: #2c3a41;
+    background-color: #e6e6e6;
+    left: .1em;
+  }
+  .contacts li.selected {
+    background-color: #1976D2;
+    color: white;
+  }
+  .contacts li.selected:hover {
+    background-color: #505050;
+    color: white;
+  }
+  .contacts li.selected:active {
+    background-color:#1976D2;
+    color: white;
+  }
+
+  
